@@ -71,6 +71,11 @@ img{
    display: block;
    margin: 30px auto;
 }
+.usermane{
+  float: right;
+  color: #999;
+  font-family: 'Open Sans', sans-serif
+}
 .datetime{
   float: right;
   color: #999;

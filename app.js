@@ -47,11 +47,13 @@ function index(page){
                   template : '#detailTpl',
                   data     : {post: data[i]}
               });
-              window._G.post[data[i].number] = {};
+              window._G.post[data[i].number] = {};			  
               window._G.post[data[i].number].body = ractive.toHTML();
               
               var title = data[i].title + " | " + _config['blog_name'];
               window._G.post[data[i].number].title = title;
+			  var user = data[i].user ;
+			  window._G.post[data[i].number].user = user;
             }
         }
     });
