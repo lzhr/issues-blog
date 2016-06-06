@@ -288,6 +288,17 @@ sup {
     vertical-align: super;
     line-height: 0;
 }
+footer{
+	padding:40px 0;
+	font-size:12px;
+	color:#999;
+	text-align:right
+}
+@media screen and (max-width:400px){
+	footer{
+		text-align:center
+	}
+}
 * {
 	-webkit-print-color-adjust: exact;
 }
