@@ -34,7 +34,9 @@
         {{#posts}}
         <li class="postlist"><a href="#post/{{number}}">{{title}}</a>
 	<!--	<span class="username">{{user.login}}</span>      -->
-		<span class="datetime"><a href="{{user.html_url}}">{{user.login}}</a>.{{formatTime(created_at)}}</span></li>
+		<span class="datetime"><a href="{{user.html_url}}">
+		<!--<img src="{{user.avatar_url}}&s=18" class="avatar">-->
+		{{user.login}}</a>.{{formatTime(created_at)}}</span></li>
         {{/posts}}
     </ul>
     {{#prev}}<a href="#p{{page-1}}" class="prev">上一页</a>{{/prev}}
@@ -45,7 +47,7 @@
      <h1>{{title}}</h1>
      <!--<span class="author">{{user.login}}</span>-->
 	 <span class="create_at">
-	 	<a href="{{user.html_url}}"><img src="{{user.avatar_url}}&s=25">{{user.login}}</a>.
+	 	<a href="{{user.html_url}}"><img src="{{user.avatar_url}}&s=18" class="avatar">.{{user.login}}</a>.
 	 	发表于 {{formatTime(created_at)}}
 	 </span>
      <div class="content">{{{markdown2HTML(body)}}}</div>
