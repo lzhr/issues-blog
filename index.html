@@ -33,7 +33,8 @@
     <ul class="postlist">
         {{#posts}}
         <li class="postlist"><a href="#post/{{number}}">{{title}}</a>
-		<span class="username">{{user.login}}</span><span class="datetime">{{formatTime(created_at)}}</span></li>
+	<!--	<span class="username">{{user.login}}</span>      -->
+		<span class="datetime">{{user.login}}.{{formatTime(created_at)}}</span></li>
         {{/posts}}
     </ul>
     {{#prev}}<a href="#p{{page-1}}" class="prev">上一页</a>{{/prev}}
